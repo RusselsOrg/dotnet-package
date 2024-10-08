@@ -29,6 +29,6 @@ jobs:
 
       - name: Publish the package
         run: |
-          dotnet nuget push 'bin\\Release\\*.nupkg' --source `
+          dotnet nuget push 'D:\a\dotnet-package\dotnet-package\bin\Release\*.nupkg' --source `
             'https://nuget.pkg.github.com/RusselsOrg/index.json' `
              --api-key ${{ secrets.PACKAGE_TOKEN }}
