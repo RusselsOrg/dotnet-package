@@ -21,11 +21,11 @@ jobs:
 
       - name: Add the GitHub NuGet registry as a package source
         run: |
-          dotnet nuget add source --username OWNER \
-          --password ${{ secrets.PACKAGE_TOKEN }} \
-          --store-password-in-clear-text --name github \
+          dotnet nuget add source "https://nuget.pkg.github.com/RusselsOrg/index.json" \
           --name github \
-          "https://nuget.pkg.github.com/RusselsOrg/index.json"
+          --username OWNER \
+          --password ${{ secrets.PACKAGE_TOKEN }} \
+          --store-password-in-clear-text
 
       - name: Publish the package
         run: |
