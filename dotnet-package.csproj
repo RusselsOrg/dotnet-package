@@ -16,7 +16,7 @@
       A hello world app created to demonstrate deployment to GitHub's NuGet
       registry.
     </PackageDescription>
-    <RepositoryUrl>https://github.com/inspirational-impala-inc/dotnet-package</RepositoryUrl>
+    <RepositoryUrl>https://github.com/RusselsOrg/dotnet-package</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
