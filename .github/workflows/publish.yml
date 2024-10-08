@@ -25,10 +25,10 @@ jobs:
           --password ${{ secrets.PACKAGE_TOKEN }} \
           --store-password-in-clear-text --name github \
           --name github \
-          "https://nuget.pkg.github.com/inspirational-impala-inc/index.json"
+          "https://nuget.pkg.github.com/RusselsOrg/index.json"
 
       - name: Publish the package
         run: |
           dotnet nuget push 'bin/Release/*.nupkg' --source \
-            'https://nuget.pkg.github.com/inspirational-impala-inc/index.json' \
+            'https://nuget.pkg.github.com/RusselsOrg/index.json' \
              --api-key ${{ secrets.PACKAGE_TOKEN }}
